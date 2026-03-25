@@ -1,0 +1,123 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fafafa;
+  color: #222;
+}
+h1, h2 {
+  font-weight: 600;
+}
+
+.feed-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+.post-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.post-card p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.post-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.create-post-form textarea {
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.create-post-form input[type="file"] {
+  margin-top: 10px;
+}
+
+.create-post-form button {
+  margin-top: 10px;
+  background: #5a67f2; /* яскравий акцент */
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  width: 100%;
+}
+
+textarea, input[type="file"] {
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background: #4c51bf;
+  transition: background 0.2s;
+}
+.post-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s;
+}
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.6); /* напівпрозорий */
+  backdrop-filter: blur(10px); /* ефект розмиття */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+.logo-img {
+  width: 100px;
+  margin-bottom: 15px;
+  height: auto;
+}
+.paw-img {
+  width: 30px;
+  height: auto;
+  transform: translateY(-10px);
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.menu-item {
+  padding: 12px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  color: #333;
+  border-left: 3px solid transparent;
+  transition: all 0.2s;
+}
+.menu-item.active {
+  border-left: 3px solid #5a67f2; /* лінія на активній сторінці */
+  font-weight: 600;
+}
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
